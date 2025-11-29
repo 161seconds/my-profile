@@ -66,7 +66,6 @@ let hoverSound = null;
 let soundEnabled = false;
 
 // Uncomment below to enable sound effects
-/*
 try {
     hoverSound = new Audio("https://cdn.pixabay.com/download/audio/2022/03/31/audio_7b1e6607ab.mp3?filename=click-124467.mp3");
     hoverSound.volume = 0.2;
@@ -86,7 +85,7 @@ if (soundEnabled && hoverSound) {
         });
     });
 }
-*/
+
 
 
 // ===== Dark Mode Toggle =====
