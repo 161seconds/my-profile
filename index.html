@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Cá Nhân</title>
+    <title>Personal Profile</title>
 
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
@@ -13,20 +13,24 @@
 
     <!-- ===== NAVIGATION ===== -->
     <nav class="top-nav">
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <button id="darkModeToggle" class="dark-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </ul>
+    </nav>
 
 
     <!-- ===== HOME SECTION ===== -->
     <section id="home">
         <header>
-            <img src="https://scontent-hkg1-2.xx.fbcdn.net/v/t39.30808-6/571573542_1618107105838679_6205629962386769452_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGibC04jr4PviDHRIB5yGbKbVU4yLbirzptVTjItuKvOvZhf_lwNlrTWoMOOPTJqr0augSme_Eu9dvmCfSJDuWK&_nc_ohc=qvxF1eKRN2IQ7kNvwEJ0rdG&_nc_oc=AdnemVyCjuFuzVFXbG7zIiEfrdT7NrIbHacUzJ9w5h68VqdSaw18c1I9nvU1-MTNiB8&_nc_zt=23&_nc_ht=scontent-hkg1-2.xx&_nc_gid=hYxxXpTBxQNtNpu0wd8tGQ&oh=00_Afg2oPE3TI5eaOmOIwToRkV6Bm6gj2OV8caso9EnItQ8VQ&oe=692C0DCF" alt="avatar">
+            <img src="https://scontent-hkg1-2.xx.fbcdn.net/v/t39.30808-6/571573542_1618107105838679_6205629962386769452_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGibC04jr4PviDHRIB5yGbKbVU4yLbirzptVTjItuKvOvZhf_lwNlrTWoMOOPTJqr0augSme_Eu9dvmCfSJDuWK&_nc_ohc=qvxF1eKRN2IQ7kNvwEJ0rdG&_nc_oc=AdnemVyCjuFuzVFXbG7zIiEfrdT7NrIbHacUzJ9w5h68VqdSaw18c1I9nvU1-MTNiB8&_nc_zt=23&_nc_ht=scontent-hkg1-2.xx&_nc_gid=hYxxXpTBxQNtNpu0wd8tGQ&oh=00_Afg2oPE3TI5eaOmOIwToRkV6Bm6gj2OV8caso9EnItQ8VQ&oe=692C0DCF"
+                alt="avatar">
 
             <h1>Nguyen Van Quoc Bao</h1>
             <p>Student</p>
@@ -41,7 +45,8 @@
         <section id="about">
             <h2 class="section-title">About Me</h2>
             <p class="about">
-                Hello! I'm <b>Nguyen Van Quoc Bao</b>. I'm a sophomore at FPT University, majoring in Software Engineering.
+                Hello! I'm <b>Nguyen Van Quoc Bao</b>. I'm a sophomore at FPT University, majoring in Software
+                Engineering.
                 I love coding, exploring new tech, and building things that actually work.
                 My interests include web development, UI/UX, and clean code.
                 I'm always trying to level up my skills and learn something new every day.
@@ -53,56 +58,98 @@
         <section id="skills">
             <h2 class="section-title">Skills</h2>
 
-            <div class="skills">
-                <div class="skill">HTML / CSS</div>
-                <div class="skill">JavaScript</div>
-                <div class="skill">C / Java</div>
-                <div class="skill">UI/UX</div>
-                <div class="skill">Git / GitHub</div>
+            <div class="skills-container">
+
+                <!-- TECH STACK -->
+                <h3 class="skill-subtitle">Tech Stack</h3>
+                <div class="skills">
+
+                    <div class="skill">
+                        <img src="images/html-logo.png" class="skill-icon">
+                        HTML
+                    </div>
+
+                    <div class="skill">
+                        <img src="images/css-logo-1.png" class="skill-icon">
+                        CSS
+                    </div>
+
+                    <div class="skill">
+                        <img src="images/is-logo-1.jpg" class="skill-icon">
+                        JavaScript
+                    </div>
+
+                    <div class="skill">
+                        <img src="images/git.jpg" class="skill-icon">
+                        Git
+                    </div>
+
+                    <div class="skill">
+                        <img src="images/github.png" class="skill-icon">
+                        GitHub
+                    </div>
+
+                </div>
+
+                <!-- PROGRAMMING LANGUAGES -->
+                <h3 class="skill-subtitle">Programming Languages</h3>
+                <div class="skills">
+                    <div class="skill">
+                        <img src="images/devC++.png" class="skill-icon">
+                        C
+                    </div>
+                    <div class="skill">
+                        <img src="images/java-logo-transparent-free-png.webp" class="skill-icon">
+                        Java
+                    </div>
+                </div>
+
             </div>
         </section>
-
-
         <!-- ===== PROJECTS SECTION ===== -->
         <section id="projects">
-            <h2 class="section-title">Projects cá nhân</h2>
+            <h2 class="section-title">Personal Projects</h2>
 
             <div class="projects">
 
                 <div class="project-card">
-                    <h3>🎄 TestThan Click</h3>
-                    <p>A website checks that if your "thận" is ok.</p>
+                    <h3>TestThan Click</h3>
+                    <p>A website checks that if your kidneys are ok.</p>
                 </div>
 
                 <div class="project-card">
-                    <h3>🚗 Thi Bằng Lái Xe</h3>
+                    <h3>Driving License Exam Preparation</h3>
                     <p>A web that helps you train GPLX with JSON + smooth UI. Support dark/light mode.</p>
                 </div>
 
             </div>
         </section>
 
+    </div>
+    </section>
 
-        <!-- ===== CONTACT SECTION ===== -->
-        <section id="contact">
-            <h2 class="section-title">Contact Me</h2>
 
-            <div class="social">
-                <a href="https://www.instagram.com/_baoo.161_/">📸</a>
-                <a href="https://github.com/161seconds">💼</a>
-                <a href="https://www.facebook.com/baroosipp">🌐</a>
-            </div>
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
 
-            <span> HOTLINE </span>
+        <div class="social">
+            <a href="https://www.instagram.com/_baoo.161_/">📸</a>
+            <a href="https://github.com/161seconds">💼</a>
+            <a href="https://www.facebook.com/baroosipp">🌐</a>
+        </div>
 
-            <ul>
-                <li><strong>Phone:</strong> 0942541378</li>
-                <li><strong>Email:</strong> quocbao.nguyen16102006@gmail.com</li>
-                <li><strong>Hometown Address:</strong> Duc Trong Commune, Lam Dong Province, Vietnam</li>
-                <li><strong>Current Address:</strong> S10.03, Vinhomes Grand Park, Thu Duc District, Ho Chi Minh City, Viet Nam</li>
-            </ul>
+        <span> HOTLINE </span>
 
-        </section>
+        <ul>
+            <li><strong>Phone:</strong> 0942541378</li>
+            <li><strong>Email:</strong> quocbao.nguyen16102006@gmail.com</li>
+            <li><strong>Hometown Address:</strong> Duc Trong Commune, Lam Dong Province, Vietnam</li>
+            <li><strong>Current Address:</strong> S10.03, Vinhomes Grand Park, Thu Duc District, Ho Chi Minh City, Viet
+                Nam</li>
+        </ul>
+
+    </section>
 
     </div>
 
@@ -112,4 +159,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
