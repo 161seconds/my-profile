@@ -207,14 +207,14 @@ if ("loading" in HTMLImageElement.prototype) {
 
 // ===== Console Easter Egg (Optional) =====
 console.log(
-    "%c👋 Hello there!",
+    "%c Hello babi!",
     "color: #00eaff; font-size: 20px; font-weight: bold;"
 );
 console.log(
-    "%cWelcome to my portfolio! Feel free to explore the code. 🚀",
+    "%c sao babi tim' dc cho nay vay. 🚀",
     "color: #00eaff; font-size: 14px;"
 );
 console.log(
-    "%cInterested in collaboration? Reach out: quocbao.nguyen16102006@gmail.com",
+    "%c email ne: quocbao.nguyen16102006@gmail.com",
     "color: #999; font-size: 12px;"
 );
